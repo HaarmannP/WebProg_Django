@@ -1,0 +1,37 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>About Us</title>
+        <link rel="stylesheet" href="{% static 'css/aboutUs.css' %}">
+    </head>
+    <body>
+        {% block content %}
+        <h1 id="page-header"> Über uns</h1>
+        <table id="abtSection">
+            <tr id="edmond">
+                <td style="width: 190px"><h3>Edmond Beciraj</h3></td>
+                <td>Dualer Student an der DHBW Mannheim<br>
+                Studiengang WWI-19-EG/EH<br>
+                Schwerpunkt E-Government</td>
+            </tr>
+            <tr id="paolo">
+                <td><h3>Paolo Herrmann</h3></td>
+                <td>Dualer Student an der DHBW Mannheim<br>
+                Studiengang WWI-19-EG/EH<br>
+                Schwerpunkt E-Government</td>
+            </tr>
+            <tr id="eva">
+                <td><h3>Steven Hubert</h3></td>
+                <td>Dualer Student an der DHBW Mannheim<br>
+                Studiengang WWI-19-EG/EH<br>
+                Schwerpunkt E-Health</td>
+            </tr>
+        </table>
+        
+        
+        <h2 id="BlockLink"> <a href="{% url 'welcome' %}" ><span class="glyphicon glyphicon-plus">Homepage</span></a>    |    <a href="{% url 'post_list' %}" ><span class="glyphicon glyphicon-plus">Blog</span></a></h2>
+   
+        {% endblock %}
+    </body>
+</html>

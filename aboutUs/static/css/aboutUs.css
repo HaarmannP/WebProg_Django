@@ -1,0 +1,46 @@
+body {
+    background-image: linear-gradient(khaki, turquoise);
+    height: 100%;
+}
+
+tr {
+    height: 160px;
+}
+
+h1 {
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+#abtSection {
+    position: relative;
+    left: 700px;
+    top: 140px;
+    text-align: center;
+}
+
+#edmond {
+    font-size: large;
+    text-align: left;
+}
+
+#paolo {
+    font-size: large;
+    text-align: left;
+}
+
+#eva {
+    font-size: large;
+    text-align: left;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+h2 { 
+    position: relative;
+    top: 250px;
+    text-align: center;
+}

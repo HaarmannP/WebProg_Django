@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+
+<head>
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    {% block content %}
+    <h1 id="page-header"> Willkommen auf unserer Django Website</h1>
+
+    <h2>This Website is for demonstration purposes only.</h2>
+
+    <h2 id="vidheadline">A cute video</h2>
+    <video width="400" controls id="vid">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <br>
+    <br>
+    <br>
+
+    <h2 id="audheadline">Some horse audio</h2>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element
+    </audio>
+    
+   
+    <h1 id="BlockLink"> <a href="{% url 'post_list' %}" class="footer"><span class="glyphicon glyphicon-plus">Blog</span></a>    |    <a href="{% url 'about' %}" class="footer"><span class="glyphicon glyphicon-plus">Über uns</span></a></h1>
+   
+    {% endblock %}
+</body>
+
+</html>
