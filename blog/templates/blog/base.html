@@ -11,10 +11,9 @@
     <body>
         <div class="page-header">
         {% if user.is_authenticated %}
-            <a href="{% url 'welcome' %}" class="top-menu"><span class="glyphicon glyphicon-home" ></spawn></a>
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         {% endif %}
-           
+             <a href="{% url 'welcome' %}" class="top-menu"><span class="glyphicon glyphicon-home" ></spawn></a>  
         
             <h1><a href="{% url 'post_list' %}"> <span>Django Test Blog</spawn></a></h1>
         </div>
