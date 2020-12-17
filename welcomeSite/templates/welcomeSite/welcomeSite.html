@@ -8,7 +8,7 @@
 
 <body>
     {% block content %}
-    <h1 id="page-header"> Willkommen auf unserer Django Website</h1>
+ <h1 id="page-header"> Willkommen auf unserer Django Website</h1>
 
     <h2>This Website is for demonstration purposes only.</h2>
 
@@ -27,8 +27,7 @@
         Your browser does not support the audio element
     </audio>
     
-   
-    <h2 id="footnote"> <a href="{% url 'post_list' %}" class="footer"><span class="glyphicon glyphicon-plus">Blog</span></a>    |    <a href="{% url 'about' %}" class="footer"><span class="glyphicon glyphicon-plus">Über uns</span></a></h3>
+    <h2 id="footnote"> <a href="{% url 'post_list' %}">Blog</a>    |    <a href="{% url 'about' %}" class="footer">Über uns</h2>
    
     {% endblock %}
 </body>
